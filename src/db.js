@@ -5,7 +5,7 @@ const UserModel = require("./Models/User"); //importar todos mis modelos aqui
 
 const sequelize = new Sequelize(
   "postgres://postgres:1234@localhost:5432/market-protalento"
-); // creamos una INSTANCIA de sequelize con nuestras credenciales
+); // creamos una INSTANCIA de sequelize con nuestras CREDENCIALES
 
 /* Sincronizar mis modelos */
 UserModel(sequelize);

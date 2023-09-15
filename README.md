@@ -19,3 +19,4 @@ Sequelize + Express + Node
 1- Copiar en enlace de git-hub
 2- `git clone https://...............`
 3- Abrirlo con visual y `npm install`
+4- Cambiar credenciales de PG/Sequelize
