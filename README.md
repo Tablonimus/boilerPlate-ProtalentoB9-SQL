@@ -6,7 +6,7 @@ Sequelize + Express + Node
 2- crear scripts en el package.json.
 3- instalar dependencias
   a- `npm i nodemon -D`
-  b- `npm install --save sequelize pg pg-hstore express`
+  b- `npm install --save sequelize pg pg-hstore express cors`
 4- Crear un index para conectar al iniciar scripts de npm
 5- Crear estructura de carpetas del proeycto (src y su contenido)
 6- Crear app.js y db.js dentro de carpeta /src
@@ -15,8 +15,7 @@ Sequelize + Express + Node
 9- `git commit -m "first commit"`
 10-`git push`
 
-# Pasos para clonar
-
+# Pasos para iniciar el proyecto clonado
 1- Copiar en enlace de git-hub
 2- `git clone https://...............`
-3- `npm install`
+3- Abrirlo con visual y `npm install`
