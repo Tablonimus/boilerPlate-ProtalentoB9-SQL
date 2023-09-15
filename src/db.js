@@ -1,0 +1,1 @@
+//configuraciones de base de datos(sequelize SQL)
