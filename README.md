@@ -20,3 +20,7 @@ Sequelize + Express + Node
 2- `git clone https://...............`
 3- Abrirlo con visual y `npm install`
 4- Cambiar credenciales de PG/Sequelize
+5- Crean un modelo
+6- lo vinculan en db.js
+7- lo importan en una ruta(app.js)
+8- levantan el servidor `npm run dev`

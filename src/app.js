@@ -9,7 +9,7 @@ app.use(express.json()); /*--Para aceptar json(body) en mis peticiones http-- */
 app.use(cors()); /* Para aceptar peticiones del front o postman*/
 
 /* Vinculo mis modelos para usar rutas */
-const { User } = require("./db");
+const { User,Product } = require("./db");
 
 /* RUTAS */
 app.get("/users", async (req, res) => {
@@ -17,9 +17,18 @@ app.get("/users", async (req, res) => {
   res.status(200).json(allUsers);
 });
 
+app.get("/products", async (req, res) => {
+  const allProducts = await Product.findAll(); //todos los usuarios
+  res.status(200).json(allProducts);
+});
+
 app.post("/users", async (req, res) => {
   const newUser = await User.create({ firstName: "Nestor", lastName: "Aguas" }); //creo un usuario
   res.status(200).json("usuario creado con exito");
+});
+app.post("/products", async (req, res) => {
+  const newProduct = await Product.create({ title: "Cerveza", price: "$50" }); //creo un producto
+  res.status(200).json("producto creado con exito");
 });
 
 app.get("/", (req, res) => {
