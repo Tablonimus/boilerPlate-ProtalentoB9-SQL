@@ -1,4 +1,4 @@
-# boilerPlate-ProtalentoB9-SQL
+# boilerPlate-SQL
 Sequelize + Express + Node
 
 # pasos a seguir en la creacion luego de clonar un proyecto vacio
